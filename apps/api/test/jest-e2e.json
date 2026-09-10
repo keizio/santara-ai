@@ -1,0 +1,24 @@
+{
+  "moduleFileExtensions": ["js", "mjs", "cjs", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(m|c)?(t|j)s$": [
+      "ts-jest",
+      {
+        "tsconfig": {
+          "allowJs": true,
+          "module": "commonjs",
+          "moduleResolution": "node",
+          "resolvePackageJsonExports": false,
+          "target": "ES2022",
+          "esModuleInterop": true,
+          "experimentalDecorators": true,
+          "emitDecoratorMetadata": true
+        }
+      }
+    ]
+  },
+  "transformIgnorePatterns": []
+}
